@@ -1,0 +1,59 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    z-index: 1000;
+}
+
+/* Hide navbar by default */
+#navbar.hidden {
+    display: none;
+}
+
+/* Fade-in animation for scroll effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+/* Loader styling */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Hide loader once the page is loaded */
+  body.loaded .loader {
+    display: none;
+  }
+  
+  /* Make sure content is hidden during the delay */
+  body.loading .content {
+    display: none;
+  }
+  
+
+
+  

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Bliss</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white dark:bg-gray-900">
+   <!-- Loader Spinner -->
+   <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-gray-900">
+    <div class="w-12 h-12 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+  </div>
+
+    <!-- navbar -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="images/logo.png" class="h-8" alt="Coffee Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CoffeeBliss</span>
+      </a>
+      <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li><a href="index.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Home</a></li>
+          <li><a href="about.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">About</a></li>
+          <li><a href="menu.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Menu</a></li>
+          <li><a href="testimonials.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Testimonials</a></li>
+          <li><a href="events & offers.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Events & Offers</a></li>
+          <li><a href="contact.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-gradient-to-r from-amber-100 via-white to-amber-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-20 px-6 sm:px-10 lg:px-16">
+    <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-lg p-10 text-center transition-transform duration-300 hover:scale-[1.01]">
+      
+      <!-- Title -->
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 relative inline-block">
+        Our Menu
+        <span class="block h-1 w-20 bg-amber-500 mx-auto mt-2 rounded-full"></span>
+      </h2>
+  
+      <!-- Description -->
+      <p class="text-lg sm:text-xl font-light text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+        Explore our wide selection of expertly brewed coffee. Whether you’re here for a quick pick-me-up or a relaxing moment, we’ve got something for you:
+      </p>
+  
+    </div>
+  </section>
+  
+      <!-- Coffee Items -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <!-- Coffee Item 1 -->
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+          <img src="images/image.png" alt="Espresso" class="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Espresso</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">A strong, bold coffee brewed by forcing steam through finely ground coffee beans.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white">KES 300</p>
+          <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+        </div>
+    
+        <!-- Coffee Item 2 -->
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+          <img src="images/download.jpg" alt="Americano" class="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Americano</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">Espresso diluted with hot water, creating a strong but smooth flavor.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white">KES 350</p>
+          <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+        </div>
+    
+        <!-- Coffee Item 3 -->
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+          <img src="images/late.jpg" alt="Latte" class="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Latte</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">Espresso with steamed milk, topped with a light layer of foam.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white">KES 400</p>
+          <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+        </div>
+      </div>
+    
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mt-12">
+        <!-- Coffee Item 4 -->
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+          <img src="images/cap.jpg" alt="Cappuccino" class="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Cappuccino</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">A shot of espresso topped with equal parts steamed milk and foam.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white">KES 450</p>
+          <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+        </div>
+    
+        <!-- Coffee Item 5 -->
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+          <img src="images/moca.jpg" alt="Mocha" class="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Mocha</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">A combination of espresso, steamed milk, and chocolate syrup, topped with whipped cream.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white">KES 500</p>
+          <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+        </div>
+    
+        <!-- Coffee Item 6 -->
+        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+          <img src="images/flat.jpg" alt="Flat White" class="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Flat White</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">Espresso with steamed milk and a velvety microfoam top, perfect for those who like a creamy taste.</p>
+          <p class="text-lg font-bold text-gray-900 dark:text-white">KES 450</p>
+          <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+        </div>
+      </div>
+  </section>
+  <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        
+        <!-- Logo and Description -->
+        <div class="flex flex-col items-center md:items-start">
+          <img src="images/logo.png" alt="Coffee Restaurant Logo" class="w-24 mb-4">
+          <p class="text-lg font-light text-gray-300 dark:text-gray-400">
+            Enjoy the finest coffee and treats in Nairobi. Join us for a cozy experience!
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="text-center md:text-left">
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="#menu" class="text-gray-400 hover:text-white">Menu</a></li>
+            <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="text-center md:text-left">
+          <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+          <div class="flex space-x-6 justify-center md:justify-start">
+            <a href="https://www.facebook.com" target="_blank" class="text-blue-600 hover:text-blue-800">
+              <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 3H6c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h4c1.104 0 2-.896 2-2v-2h2l.74-3h-2.74V8c0-.553.447-1 1-1h1V4c0-.553-.447-1-1-1h-3c-1.657 0-3 1.343-3 3v3H7v3h3v7h3v-7h3z"></path></svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-pink-600 hover:text-pink-800">
+              <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c2.208 0 4 1.792 4 4s-1.792 4-4 4-4-1.792-4-4 1.792-4 4-4zm0 8c2.208 0 4 1.792 4 4s-1.792 4-4 4-4-1.792-4-4 1.792-4 4-4zm0 8c1.104 0 2 .896 2 2v2h-4v-2c0-1.104.896-2 2-2zm8 0c0 2.208-1.792 4-4 4h-8c-2.208 0-4-1.792-4-4v-8c0-2.208 1.792-4 4-4h8c2.208 0 4 1.792 4 4v8z"></path></svg>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="text-blue-400 hover:text-blue-600">
+              <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 3c-1 0-1.92.39-2.64 1.02a9.97 9.97 0 0 0 4.15-5.6 9.92 9.92 0 0 1-3.16 1.18 4.92 4.92 0 0 0-8.37 4.48c-4.09-.2-7.7-2.17-10.1-5.14a4.91 4.91 0 0 0 1.52 6.56 4.9 4.9 0 0 1-2.23-.61v.06a4.91 4.91 0 0 0 3.94 4.81 4.88 4.88 0 0 1-2.2.08c.62 1.95 2.43 3.37 4.58 3.41a9.87 9.87 0 0 1-7.18 2.02c2.27-1.46 4.88-2.29 7.55-3.32 3.4-1.45 6.03-3.57 7.35-7.04-.12-.01-.24-.01-.35-.01z"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+  <!-- Newsletter Subscription -->
+  <div class="max-w-md mx-auto md:mx-0 px-4 text-center md:text-left">
+    <h4 class="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h4>
+    <form 
+      action="#" 
+      method="POST" 
+      class="flex flex-wrap items-center justify-center md:justify-start gap-4"
+    >
+      <input
+        type="email"
+        name="newsletter"
+        placeholder="Enter your email"
+        class="w-full sm:flex-1 px-4 py-3 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600"
+        required
+      />
+      <button
+        type="submit"
+        class="w-full sm:w-auto px-6 py-3 text-white bg-amber-600 hover:bg-amber-700 rounded-lg focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+  
+  
+      
+      <!-- Footer Bottom -->
+      <div class="mt-12 text-center text-gray-400 dark:text-gray-500">
+        <p>&copy; 2025 Coffee Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // 1. Loader Animation
+window.addEventListener('load', function() {
+    // Simulate a delay for the loader (e.g., 2 seconds)
+    setTimeout(function() {
+        // After the delay, hide the loader and add the 'loaded' class
+        document.body.classList.add('loaded');
+        document.getElementById('loader').style.display = 'none';
+    }, 1500); // 2000 milliseconds = 2 seconds
+});
+
+        // 2. Hamburger Menu Toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            // Toggle the 'hidden' class to show/hide the navbar
+            navbar.classList.toggle('hidden');
+        });
+
+        // 3. Scroll-Based Reveal Effect
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(function(element) {
+                const rect = element.getBoundingClientRect();
+                // If the element is within the viewport, add the 'visible' class
+                if (rect.top < window.innerHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+        // Show loader when page starts loading
+document.body.classList.add('loading');
+
+// Wait for 2 seconds (2000 milliseconds) before hiding loader and showing content
+setTimeout(function() {
+  document.body.classList.add('loaded'); // Hide loader by adding 'loaded' class
+}, 2000); // 2000 milliseconds = 2 seconds
+
+
+  
+  
+  </script>
+  </body>
+  </html>
+  
+  
+  
+  

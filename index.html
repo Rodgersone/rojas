@@ -1,15 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>pushing fies to github</h1>
-    <h1>pushing fies to github</h1>
-    <h1>pushing fies to github what do u see</h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Bliss</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/main.css">
 
+
+  
+
+
+ 
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+
+  <!-- Loader Spinner -->
+  <div id="loader" class="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-gray-900">
+    <div class="w-12 h-12 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="images/logo.png" class="h-8" alt="Coffee Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CoffeeBliss</span>
+      </a>
+
+      <!-- Hamburger Button -->
+      <button id="hamburger" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+
+      <!-- Navbar Links -->
+      <div id="navbar" class="hidden w-full md:block md:w-auto">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li><a href="index.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Home</a></li>
+          <li><a href="about.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">About</a></li>
+          <li><a href="menu.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Menu</a></li>
+          <li><a href="testimonials.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Testimonials</a></li>
+          <li><a href="events & offers.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Events & Offers</a></li>
+          <li><a href="contact.html" class="block py-2 px-3 text-gray-900 hover:text-blue-700 dark:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+</body>
+</html>
+
+
+  
+ <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+<section class="relative">
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover z-0">
+      <source src="path/to/your/video.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="grid max-w-screen-xl px-4 py-16 mx-auto lg:gap-8 xl:gap-0 lg:py-24 lg:grid-cols-12 relative z-10">
+      <div class="mr-auto place-self-center lg:col-span-7">
+        <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">Welcome to Coffee Bliss</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl">Sip, relax, and enjoy the aroma of freshly brewed coffee at our cozy corner. Let every cup tell a story.</p>
+        <a href="menu.html" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-center text-white bg-amber-700 rounded-lg shadow-lg transform transition-all duration-300 ease-in-out hover:bg-amber-800 hover:scale-105 focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-900">View Menu</a>
+      </div>
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex justify-center">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Coffee cup image" class="rounded-lg shadow-xl transform transition-transform duration-500 hover:scale-105">
+      </div>
+    </div>
+  </section>
+  
+ <!-- About Section with Clear Background -->
+  
+ <section class="bg-amber-50 dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-screen-xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-6">About Us</h2>
+    <p class="text-lg font-light text-gray-700 dark:text-gray-300">At Coffee Bliss, we combine passion, comfort, and community. We deliver the finest coffee in a cozy environment. Here’s more about who we are:</p>
+  </div>
+<!-- Who We Are Section -->
+<div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+  <div class="w-full md:w-1/2 text-center md:text-left">
+    <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">Who We Are</h3>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+      Coffee Bliss was born from a passion for great coffee. Since 2010, we’ve been serving high-quality brews and creating a welcoming space where everyone feels at home. Our mission is simple: to provide an exceptional coffee experience that goes beyond just the beans. Whether you're stopping by for a morning pick-me-up or spending a cozy afternoon with friends, we aim to make every moment special. We believe that great coffee is about connection—whether with the people around you or the moments you cherish.
+    </p>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+      We are committed to sustainability, ethical sourcing, and supporting our community. Each cup of coffee is crafted with care, sourced from responsible farmers, and served in an environment that fosters creativity, connection, and comfort. At Coffee Bliss, we’re not just brewing coffee; we’re brewing a culture of warmth, inclusivity, and love for what we do.
+    </p>
+  </div>
+  <div class="w-full md:w-1/2">
+    <img src="images/cof2.jpg" alt="Our Coffee" class="w-full h-full object-cover rounded-lg shadow-xl transition-transform duration-300 hover:scale-105" />
+  </div>
+</div>
+
+
+   <!-- Our Values Section -->
+   <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+    <!-- Image on the left for tablet/desktop and on top for mobile -->
+    <div class="w-full md:w-1/2">
+      <img src="images/adult.jpg" alt="Coffee Shop Interior" 
+           class="w-full max-h-80 object-cover object-center rounded-lg shadow-xl transition-transform duration-300 hover:scale-105" />
+    </div>
+    
+    <!-- Text on the right for tablet/desktop and below for mobile -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">Our Values</h3>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+        At Coffee Bliss, we don’t just serve coffee—we serve purpose. Our values are the soul of everything we brew.
+      </p>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+        <li><strong>Quality First:</strong> Every bean is carefully selected for a rich and satisfying experience.</li>
+        <li><strong>Ethical Sourcing:</strong> We partner with responsible farmers for every cup.</li>
+        <li><strong>Warm Community:</strong> Our shop is a space for connection, laughter, and comfort.</li>
+        <li><strong>Sustainable Practices:</strong> From recyclable cups to local partnerships, we care for the planet.</li>
+      </ul>
+      <p class="mt-4 text-base text-gray-600 dark:text-gray-400">
+        Whether you’re here to work, catch up with friends, or enjoy a quiet moment, we welcome you with open arms and a fresh brew.
+      </p>
+    </div>
+  </div>
+
+     <!-- Meet Our Team Section -->
+<div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+  <!-- Text Column -->
+  <div class="w-full md:w-1/2 text-center md:text-left">
+    <h3 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4">Meet Our Team</h3>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+      At Coffee Bliss, our team is a diverse group of coffee enthusiasts and service experts. From skilled baristas crafting precision pours and latte art to friendly servers who know our regulars by name, every member plays a key role in delivering a memorable experience.
+    </p>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+      We invest in ongoing training for our staff—covering everything from new brewing methods to sustainability practices. This keeps us at the forefront of coffee innovation and ensures every cup is brewed with care and consistency.
+    </p>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+      Beyond the counter, we’re community builders: hosting local art exhibits, coffee‑tasting events, and charity drives. Together, we’re more than colleagues—we’re a family dedicated to making Coffee Bliss a warm, inclusive place where everyone feels at home.
+    </p>
+  </div>
+
+  <!-- Image Column -->
+  <div class="w-full md:w-1/2">
+    <img src="images/cof3.avif" alt="Our Team" 
+         class="w-full max-h-80 object-cover object-center rounded-lg shadow-xl transition-transform duration-300 hover:scale-105" />
+  </div>
+</div>
+</sec>
+  
+  
+
+  
+<!-- Menu Section -->
+ 
+
+<section class="bg-gradient-to-r from-amber-100 via-white to-amber-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-20 px-6 sm:px-10 lg:px-16">
+  <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-lg p-10 text-center transition-transform duration-300 hover:scale-[1.01]">
+    
+    <!-- Title -->
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 relative inline-block">
+      Our Menu
+      <span class="block h-1 w-20 bg-amber-500 mx-auto mt-2 rounded-full"></span>
+    </h2>
+
+    <!-- Description -->
+    <p class="text-lg sm:text-xl font-light text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+      Explore our wide selection of expertly brewed coffee. Whether you’re here for a quick pick-me-up or a relaxing moment, we’ve got something for you:
+    </p>
+
+  </div>
+</section>
+
+    <!-- Coffee Items -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+      <!-- Coffee Item 1 -->
+      <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+        <img src="images/image.png" alt="Espresso" class="w-full h-48 object-cover rounded-lg mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Espresso</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A strong, bold coffee brewed by forcing steam through finely ground coffee beans.</p>
+        <p class="text-lg font-bold text-gray-900 dark:text-white">KES 300</p>
+        <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+      </div>
+  
+      <!-- Coffee Item 2 -->
+      <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+        <img src="images/download.jpg" alt="Americano" class="w-full h-48 object-cover rounded-lg mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Americano</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Espresso diluted with hot water, creating a strong but smooth flavor.</p>
+        <p class="text-lg font-bold text-gray-900 dark:text-white">KES 350</p>
+        <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+      </div>
+  
+      <!-- Coffee Item 3 -->
+      <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+        <img src="images/late.jpg" alt="Latte" class="w-full h-48 object-cover rounded-lg mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Latte</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Espresso with steamed milk, topped with a light layer of foam.</p>
+        <p class="text-lg font-bold text-gray-900 dark:text-white">KES 400</p>
+        <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+      </div>
+    </div>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mt-12">
+      <!-- Coffee Item 4 -->
+      <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+        <img src="images/cap.jpg" alt="Cappuccino" class="w-full h-48 object-cover rounded-lg mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Cappuccino</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A shot of espresso topped with equal parts steamed milk and foam.</p>
+        <p class="text-lg font-bold text-gray-900 dark:text-white">KES 450</p>
+        <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+      </div>
+  
+      <!-- Coffee Item 5 -->
+      <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+        <img src="images/moca.jpg" alt="Mocha" class="w-full h-48 object-cover rounded-lg mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Mocha</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">A combination of espresso, steamed milk, and chocolate syrup, topped with whipped cream.</p>
+        <p class="text-lg font-bold text-gray-900 dark:text-white">KES 500</p>
+        <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+      </div>
+  
+      <!-- Coffee Item 6 -->
+      <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-center">
+        <img src="images/flat.jpg" alt="Flat White" class="w-full h-48 object-cover rounded-lg mb-4" />
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Flat White</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Espresso with steamed milk and a velvety microfoam top, perfect for those who like a creamy taste.</p>
+        <p class="text-lg font-bold text-gray-900 dark:text-white">KES 450</p>
+        <a href="order.html" class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-amber-600 rounded-lg hover:bg-amber-700">Order Now</a>
+      </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center text-brown-700 mb-10">What Our Customers Say</h2>
+    
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-lg italic mb-4">“The coffee here is just magical! I always stop by on my way to work in Westlands.”</p>
+              <div class="flex items-center">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <p class="font-semibold">Kenneth Peter.</p>
+                  <p class="text-sm text-gray-500">Nairobi, Kenya</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-lg italic mb-4">“Best mocha in town! The ambience is peaceful, and the service is always warm.”</p>
+              <div class="flex items-center">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <p class="font-semibold">Linda Kruijt.</p>
+                  <p class="text-sm text-gray-500">Kilimani, Nairobi</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-lg italic mb-4">“I hosted a meeting here, and everyone loved the coffee and pastries. Keep it up!”</p>
+              <div class="flex items-center">
+                <img src="https://i.pravatar.cc/100?img=45" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <p class="font-semibold">Chelsea kerubo.</p>
+                  <p class="text-sm text-gray-500">Karen, Nairobi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Events & Offers Section -->
+       
+<section class="py-12 bg-gray-100 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-10">Events & Offers</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      
+      <!-- Event 1 -->
+      <div class="bg-white dark:bg-gray-800logo p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Acoustic Friday</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-1">🗓️ Every Friday | 6PM – 9PM</p>
+        <p class="text-gray-600 dark:text-gray-300">Live acoustic music and free cookies with any coffee!</p>
+      </div>
+      
+      <!-- Offer 1 -->
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">☕ Buy 1 Get 1 Free</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-1">🗓️ Every Wednesday</p>
+        <p class="text-gray-600 dark:text-gray-300">Buy any coffee and get another free. Perfect mid-week treat!</p>
+      </div>
+      
+      <!-- Event 2 -->
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition-shadow duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Barista Training</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-1">🗓️ April 27, 2025</p>
+        <p class="text-gray-600 dark:text-gray-300">Join our free community workshop and learn how to brew like a pro.</p>
+        <a href="events.html" class="mt-4 inline-block bg-yellow-600 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-700 transition duration-300">
+          View All Events
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+      <!-- Contact Section -->
+<section class="bg-white dark:bg-gray-800 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-6">Contact Us</h2>
+      <p class="text-lg font-light text-gray-700 dark:text-gray-300">We’d love to hear from you! Whether you have a question or just want to share your thoughts, get in touch with us.</p>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="max-w-screen-md mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Get In Touch</h3>
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">We’re always here to assist you. Reach us via the following:</p>
+        <ul class="space-y-4">
+          <li class="flex items-center text-gray-700 dark:text-gray-300">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 3v5a1 1 0 001 1h5M9 3v5a1 1 0 001 1h5M12 14v4a1 1 0 001 1h4M12 21v-4a1 1 0 00-1-1H9M4 3v5a1 1 0 001 1h5M4 14v4a1 1 0 001 1h5M12 12l2 2 3-3M12 12l-2 2-3-3"></path>
+            </svg>
+            <span class="text-lg">Phone: <a href="tel:+254715580184" class="text-blue-600 dark:text-blue-400">0715580184</a></span>
+          </li>
+          <li class="flex items-center text-gray-700 dark:text-gray-300">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1v12a2 2 0 002 2h12a2 2 0 002-2V10h1M9 10V7a3 3 0 016 0v3M9 10h6M4 10h3"></path>
+            </svg>
+            <span class="text-lg">Email: <a href="mailto:blissrodgerso318@gmail.com" class="text-blue-600 dark:text-blue-400">blissrodgerso318@gmail.com</a></span>
+          </li>
+          <li class="flex items-center text-gray-700 dark:text-gray-300">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17v5H6v-5m12 0v5h-2v-5M5 10V5h14v5m-7 3v5m0-5h-4m4 0h4"></path>
+            </svg>
+            <span class="text-lg">Follow Us: 
+              <a href="https://www.instagram.com" class="text-pink-600 dark:text-pink-400" target="_blank">Instagram</a>, 
+              <a href="https://www.twitter.com" class="text-blue-400 dark:text-blue-300" target="_blank">Twitter</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Send Us A Message</h3>
+        <form action="#" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600" required />
+          <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600" required />
+          <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600" required></textarea>
+          <button type="submit" class="w-full px-8 py-4 text-lg font-medium text-white bg-amber-700 rounded-lg hover:bg-amber-800 focus:ring-4 focus:ring-amber-300 dark:focus:ring-amber-600">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+<!-- Footer Section -->
+<footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- Logo and Description -->
+      <div class="flex flex-col items-center md:items-start">
+        <img src="images/logo.png" alt="Coffee Restaurant Logo" class="w-24 mb-4">
+        <p class="text-lg font-light text-gray-300 dark:text-gray-400">
+          Enjoy the finest coffee and treats in Nairobi. Join us for a cozy experience!
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="text-center md:text-left">
+        <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+          <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+          <li><a href="#menu" class="text-gray-400 hover:text-white">Menu</a></li>
+          <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="text-center md:text-left">
+        <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+        <div class="flex space-x-6 justify-center md:justify-start">
+          <a href="https://www.facebook.com" target="_blank" class="text-blue-600 hover:text-blue-800">
+            <!-- Facebook Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10 3H6c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h4c1.104 0 2-.896 2-2v-2h2l.74-3h-2.74V8c0-.553.447-1 1-1h1V4c0-.553-.447-1-1-1h-3c-1.657 0-3 1.343-3 3v3H7v3h3v7h3v-7h3z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="text-pink-600 hover:text-pink-800">
+            <!-- Instagram Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c2.208 0 4 1.792 4 4s-1.792 4-4 4-4-1.792-4-4 1.792-4 4-4zm0 8c2.208 0 4 1.792 4 4s-1.792 4-4 4-4-1.792-4-4 1.792-4 4-4zm0 8c1.104 0 2 .896 2 2v2h-4v-2c0-1.104.896-2 2-2zm8 0c0 2.208-1.792 4-4 4h-8c-2.208 0-4-1.792-4-4v-8c0-2.208 1.792-4 4-4h8c2.208 0 4 1.792 4 4v8z"></path></svg>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="text-blue-400 hover:text-blue-600">
+            <!-- Twitter Icon -->
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3c-1 0-1.92.39-2.64 1.02a9.97 9.97 0 0 0 4.15-5.6 9.92 9.92 0 0 1-3.16 1.18 4.92 4.92 0 0 0-8.37 4.48c-4.09-.2-7.7-2.17-10.1-5.14a4.91 4.91 0 0 0 1.52 6.56 4.9 4.9 0 0 1-2.23-.61v.06a4.91 4.91 0 0 0 3.94 4.81 4.88 4.88 0 0 1-2.2.08c.62 1.95 2.43 3.37 4.58 3.41a9.87 9.87 0 0 1-7.18 2.02c2.27-1.46 4.88-2.29 7.55-3.32 3.4-1.45 6.03-3.57 7.35-7.04-.12-.01-.24-.01-.35-.01z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Newsletter Subscription -->
+      <div class="text-center md:text-left">
+        <h4 class="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h4>
+        <form action="#" method="POST" class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:space-x-2">
+          <input 
+            type="email" 
+            name="newsletter" 
+            placeholder="Enter your email"
+            class="w-full sm:w-auto px-4 py-3 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600"
+            required
+          />
+          <button 
+            type="submit"
+            class="px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-lg focus:ring-2 focus:ring-amber-300 dark:focus:ring-amber-600"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-12 text-center text-gray-400 dark:text-gray-500">
+      <p>&copy; 2025 Coffee Restaurant. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+
+
+  
+// 1. Loader Animation
+window.addEventListener('load', function() {
+    // Simulate a delay for the loader (e.g., 2 seconds)
+    setTimeout(function() {
+        // After the delay, hide the loader and add the 'loaded' class
+        document.body.classList.add('loaded');
+        document.getElementById('loader').style.display = 'none';
+    }, 1500); // 2000 milliseconds = 2 seconds
+});
+
+        // 2. Hamburger Menu Toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            // Toggle the 'hidden' class to show/hide the navbar
+            navbar.classList.toggle('hidden');
+        });
+
+        // 3. Scroll-Based Reveal Effect
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(function(element) {
+                const rect = element.getBoundingClientRect();
+                // If the element is within the viewport, add the 'visible' class
+                if (rect.top < window.innerHeight) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+        // Show loader when page starts loading
+document.body.classList.add('loading');
+
+// Wait for 2 seconds (2000 milliseconds) before hiding loader and showing content
+setTimeout(function() {
+  document.body.classList.add('loaded'); // Hide loader by adding 'loaded' class
+}, 2000); // 3000 milliseconds = 2 seconds
+
+
+  
+  
+</script>
+
+    
+  
+ 
+    
+  
+  
 
 </body>
 </html>
